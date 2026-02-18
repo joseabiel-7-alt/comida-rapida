@@ -5,6 +5,7 @@ public class fastfoot {
     private String Descripcion;
     private int Cantidad;
     private Doble Total;
+    private string Notas;
     
 
   
@@ -12,9 +13,11 @@ public class fastfoot {
     public fastfoot() {
     }
 
-    public fastfoot(int Cantidad, String Descripcion, Doble Precio, int Tamano, int TipoComida, Doble Total) {
+    
+    public fastfoot(int Cantidad, String Descripcion, string Notas, Doble Precio, int Tamano, int TipoComida, Doble Total) {
         this.Cantidad = Cantidad;
         this.Descripcion = Descripcion;
+        this.Notas = Notas;
         this.Precio = Precio;
         this.Tamano = Tamano;
         this.TipoComida = TipoComida;
@@ -67,6 +70,21 @@ public class fastfoot {
 
     public void setTotal(Doble Total) {
         this.Total = Total;
+    }
+
+
+    public void setPrecio(Doble precio) {
+        Precio = precio;
+    }
+
+
+    public string getNotas() {
+        return Notas;
+    }
+
+
+    public void setNotas(string notas) {
+        Notas = notas;
     }
 
 
